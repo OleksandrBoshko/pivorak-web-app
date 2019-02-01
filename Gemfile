@@ -45,7 +45,7 @@ gem 'rails-assets-svgxuse',                  source: 'https://rails-assets.org'
 gem 'rails-assets-semantic-ui-calendar',     source: 'https://rails-assets.org'
 gem 'premailer-rails' # email inline styling
 #=== FEATURES ==================================================================
-gem 'chartkick',                                                     '~> 3.0.1'
+gem 'chartkick',                                                     '~> 3.0.2'
 gem 'groupdate',                                                       '~> 4.0'
 gem 'stripe',                                                          '~> 1.5'
 gem 'interactor-rails',                                                '~> 2.0'
