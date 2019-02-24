@@ -1,0 +1,23 @@
+version: '3'
+volumes:
+   database:
+services:
+   pivorak-web-app:
+     build: .
+     image: pivorak-web-app
+     network_mode: "bridge" 
+     links:
+        - postgres
+        - redis
+
+   postgresql:
+     image: postgres
+     network_mode: "bridge"
+     environment:
+       POSTGRES_PASSWORD: redepass
+       POSTGRES_DB: rede
+       POSTGRES_USER: redeuser
+
+   redis:
+     image: redis
+     network_mode: "bridge"
